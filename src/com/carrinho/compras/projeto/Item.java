@@ -10,6 +10,7 @@ package com.carrinho.compras.projeto;
  * @author alex
  */
 public class Item {
+
     private String nome;
     private double preco;
     private int quantidade;
@@ -19,8 +20,14 @@ public class Item {
         this.preco = preco;
         this.quantidade = quantidade;
     }
-    
-    
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
 
     public String getNome() {
         return nome;
@@ -30,8 +37,5 @@ public class Item {
     public String toString() {
         return "Item{" + "nome=" + nome + ", preco=" + preco + ", quantidade=" + quantidade + '}';
     }
-   
-    
-    
-    
+
 }

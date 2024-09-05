@@ -35,7 +35,11 @@ public class CarrinhoDeCompras {
     }
     
     public void calcularValorTotal() {
-        
+        double total = 0.0;
+        for (Item item : itens) {
+            total += item.getPreco()*item.getQuantidade();
+        }
+        System.out.println("O preço total é: "+total);
     }
     
     public String exibirItens() {
@@ -46,13 +50,13 @@ public class CarrinhoDeCompras {
         CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
         
         System.out.println(carrinho.exibirItens());
-        carrinho.adicionarItem("desodorante", 0, 0);
-        carrinho.adicionarItem("calça", 100.0, 0);
+        carrinho.adicionarItem("desodorante", 6.7, 1);
+        carrinho.adicionarItem("calça", 100.0, 4);
         System.out.println(carrinho.exibirItens());
         
-        carrinho.removerItem("Desodorante");
-        carrinho.removerItem("Calça");
+//        carrinho.removerItem("Desodorante");
+//        carrinho.removerItem("Calça");
         System.out.println(carrinho.exibirItens());
-       
+        carrinho.calcularValorTotal();
     }
 }
