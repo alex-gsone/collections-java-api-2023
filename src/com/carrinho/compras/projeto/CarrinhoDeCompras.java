@@ -13,26 +13,46 @@ import java.util.List;
  * @author alex
  */
 public class CarrinhoDeCompras {
-
+    
     List<Item> itens;
 
+    public CarrinhoDeCompras() {
+        this.itens = new ArrayList<>();
+    }
+    
     public void adicionarItem(String nome, double preco, int quantidade) {
         itens.add(new Item(nome, preco, quantidade));
     }
-
+    
     public void removerItem(String nome) {
         List<Item> itensParaRemover = new ArrayList<>();
         for (Item item : itens) {
             if (item.getNome().equalsIgnoreCase(nome)) {
                 itensParaRemover.add(item);
-            }
-            itens.removeAll(itensParaRemover);
+            } 
         }
+        itens.removeAll(itensParaRemover);
     }
     
+    public void calcularValorTotal() {
+        
+    }
     
-
+    public String exibirItens() {
+        return itens.toString();
+    }
+    
     public static void main(String[] args) {
-
+        CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+        
+        System.out.println(carrinho.exibirItens());
+        carrinho.adicionarItem("desodorante", 0, 0);
+        carrinho.adicionarItem("calça", 100.0, 0);
+        System.out.println(carrinho.exibirItens());
+        
+        carrinho.removerItem("Desodorante");
+        carrinho.removerItem("Calça");
+        System.out.println(carrinho.exibirItens());
+       
     }
 }

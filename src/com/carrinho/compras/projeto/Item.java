@@ -19,11 +19,18 @@ public class Item {
         this.preco = preco;
         this.quantidade = quantidade;
     }
+    
+    
 
     public String getNome() {
         return nome;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Item{" + "nome=" + nome + ", preco=" + preco + ", quantidade=" + quantidade + '}';
+    }
+   
     
     
     

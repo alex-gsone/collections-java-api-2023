@@ -54,8 +54,10 @@ public class ListaTarefa {
 
         listatarefa.removerTarefa("Tarefa 1");
         System.out.println("O número total de tarefas é: " + listatarefa.ObterNumeroTotalTarefas());
-
+        listatarefa.removerTarefa("Tarefa 2");
+        
         listatarefa.ObterDescricoesTarefas();
+
     }
 
 }
