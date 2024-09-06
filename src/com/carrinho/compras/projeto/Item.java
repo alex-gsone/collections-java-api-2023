@@ -12,8 +12,8 @@ package com.carrinho.compras.projeto;
 public class Item {
 
     private String nome;
-    private double preco;
-    private int quantidade;
+    private double preco = 0.0;
+    private int quantidade = 0;
 
     public Item(String nome, double preco, int quantidade) {
         this.nome = nome;
