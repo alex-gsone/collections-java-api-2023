@@ -5,6 +5,8 @@
  */
 package com.ordenacao.numeros.projeto;
 
+import java.util.Comparator;
+
 /**
  *
  * @author alex
@@ -31,4 +33,12 @@ public class InteirosNumero implements Comparable<InteirosNumero> {
         return Integer.compare(numero, t.getNumero());
     }
 
+}
+
+class OrdenarNumerosComparable implements Comparator<InteirosNumero> {
+
+    @Override
+    public int compare(InteirosNumero a1, InteirosNumero a2) {
+        return Double.compare(a1.getNumero(), a2.getNumero());
+    }
 }
