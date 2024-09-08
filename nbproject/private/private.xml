@@ -3,10 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/ordenacao/numeros/projeto/OrdenacaoNumeros.java</file>
-            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/ordenacao/numeros/projeto/InteirosNumero.java</file>
-            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/conjunto/convidados/set/Convidado.java</file>
-            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/conjunto/convidados/set/ConjuntoConvidados.java</file>
+            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/lista/tarefa2/set/Tarefa.java</file>
+            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/cadastro/produtos/ordenacao/set/CadastroProdutos.java</file>
+            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/cadastro/produtos/ordenacao/set/Produto.java</file>
+            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/agenda/contatos/set/pesquisa/AgendaContatos.java</file>
+            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/lista/tarefa2/set/ListaTarefas.java</file>
+            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/agenda/contatos/set/pesquisa/Contato.java</file>
         </group>
     </open-files>
 </project-private>
