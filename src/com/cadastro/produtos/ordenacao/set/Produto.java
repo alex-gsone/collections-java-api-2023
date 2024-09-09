@@ -5,18 +5,20 @@
  */
 package com.cadastro.produtos.ordenacao.set;
 
+import java.util.Comparator;
+
 /**
  *
  * @author alex
  */
-public class Produto implements Comparable <Produto>{
+public class Produto implements Comparable<Produto> {
 
     private String nome;
     private long cod;
     private double preco;
     private int quantidade;
 
-    public Produto(String nome, int cod, double preco, int quantidade) {
+    public Produto(long cod, String nome, double preco, int quantidade) {
         this.nome = nome;
         this.cod = cod;
         this.preco = preco;
@@ -27,7 +29,7 @@ public class Produto implements Comparable <Produto>{
         return nome;
     }
 
-    public long getCod(){
+    public long getCod() {
         return cod;
     }
 
@@ -63,7 +65,7 @@ public class Produto implements Comparable <Produto>{
         }
         return true;
     }
-    
+
     @Override
     public String toString() {
         return "Produto{" + "nome=" + nome + ", cod=" + cod + ", preco=" + preco + ", quantidade=" + quantidade + '}';
@@ -72,6 +74,15 @@ public class Produto implements Comparable <Produto>{
     @Override
     public int compareTo(Produto p) {
         return nome.compareToIgnoreCase(p.getNome());
+    }
+
+}
+
+class ComparatorPorPreco implements Comparator<Produto> {
+
+    @Override
+    public int compare(Produto t, Produto t1) {
+        return Double.compare(t.getPreco(), t1.getPreco());
     }
 
 }
