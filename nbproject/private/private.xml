@@ -3,12 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/lista/tarefa2/set/Tarefa.java</file>
+            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/estoque/produtos/preco/map/EstoqueProdutos.java</file>
+            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/agenda/contatos/map/AgendaContatos.java</file>
             <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/cadastro/produtos/ordenacao/set/CadastroProdutos.java</file>
             <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/cadastro/produtos/ordenacao/set/Produto.java</file>
-            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/agenda/contatos/set/pesquisa/AgendaContatos.java</file>
-            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/lista/tarefa2/set/ListaTarefas.java</file>
-            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/agenda/contatos/set/pesquisa/Contato.java</file>
+            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/agenda/evento/ordenacao/map/AgendaEventos.java</file>
+            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/estoque/produtos/preco/map/Produto.java</file>
+            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/agenda/evento/ordenacao/map/Evento.java</file>
+            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/geranciador/alunos/ordenacao/set/GerenciadorAlunos.java</file>
+            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/geranciador/alunos/ordenacao/set/Aluno.java</file>
         </group>
     </open-files>
 </project-private>
