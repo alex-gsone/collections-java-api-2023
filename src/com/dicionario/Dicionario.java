@@ -47,7 +47,11 @@ public class Dicionario {
         dicionario.adicionarPalavra("cachorro", "Cão novo");
         dicionario.exibirPalavras();
 
+        dicionario.removerPalavra("cachorro");
+        dicionario.exibirPalavras();
+        
         System.out.println(dicionario.pesquisarPorPalavra("casa"));
+        System.out.println(dicionario.pesquisarPorPalavra("cachorro"));
 
     }
 }
