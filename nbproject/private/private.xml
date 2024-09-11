@@ -2,16 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/estoque/produtos/preco/map/EstoqueProdutos.java</file>
-            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/agenda/contatos/map/AgendaContatos.java</file>
-            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/cadastro/produtos/ordenacao/set/CadastroProdutos.java</file>
-            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/cadastro/produtos/ordenacao/set/Produto.java</file>
-            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/agenda/evento/ordenacao/map/AgendaEventos.java</file>
-            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/estoque/produtos/preco/map/Produto.java</file>
-            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/agenda/evento/ordenacao/map/Evento.java</file>
-            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/geranciador/alunos/ordenacao/set/GerenciadorAlunos.java</file>
-            <file>file:/home/alex/NetBeansProjects/collections-java-api-2023/src/com/geranciador/alunos/ordenacao/set/Aluno.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
