@@ -24,6 +24,10 @@ public class Dicionario {
         dicionarioMap.put(palavra, definicao);
     }
 
+    public void removerPalavra(String palavra) {
+        dicionarioMap.remove(palavra);
+    }
+
     public void exibirPalavras() {
         System.out.println(dicionarioMap);
     }
@@ -39,10 +43,11 @@ public class Dicionario {
     public static void main(String[] args) {
         Dicionario dicionario = new Dicionario();
         dicionario.adicionarPalavra("casa", "construcão para abrigar pessoas");
+        dicionario.adicionarPalavra("carro", "Qualquer veículo que se locomova sobre rodas; veículo, automóvel.");
+        dicionario.adicionarPalavra("cachorro", "Cão novo");
         dicionario.exibirPalavras();
 
         System.out.println(dicionario.pesquisarPorPalavra("casa"));
-        
 
     }
 }
