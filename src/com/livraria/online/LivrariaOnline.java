@@ -26,13 +26,13 @@ public class LivrariaOnline {
     }
 
     public void removerLivro(String titulo) {
-        String chaveRemover = ;
-        for (String l : livroMap.keySet()) {
-            if (l.) {
-//                System.out.println("kk");
+        String chaveRemover = null;
+        for (Livro l : livroMap.values()) {
+            if (l.getTitulo().equalsIgnoreCase(titulo)) {
+                System.out.println("kk");
 //               livroMap.remove("www.amazon.com/5");
                 
-                System.out.println(livroMap.get(l));
+//                System.out.println(livroMap.get(l));
             }
         }
     }
