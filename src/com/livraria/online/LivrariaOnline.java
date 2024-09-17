@@ -26,7 +26,7 @@ public class LivrariaOnline {
     }
 
     public void removerLivro(String titulo) {
-        String chaveRemover = a;
+        String chaveRemover = ;
         for (String l : livroMap.keySet()) {
             if (l.) {
 //                System.out.println("kk");
