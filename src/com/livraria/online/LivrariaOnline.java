@@ -54,12 +54,24 @@ public class LivrariaOnline {
 
     public List<Livro> pesquisarLivrosPorAutor(String autor) {
         List<Livro> livrosPorAutor = new ArrayList<>();
-        for(Livro l: livroMap.values()){
-            if(l.getAutor().equalsIgnoreCase(autor)){
+        for (Livro l : livroMap.values()) {
+            if (l.getAutor().equalsIgnoreCase(autor)) {
                 livrosPorAutor.add(l);
             }
         }
         return livrosPorAutor;
+    }
+
+    public Livro obterLivroMaisCaro() {
+        double maisCaro = 1;
+        Livro livro = null;
+        for (Livro l : livroMap.values()) {
+            if (l.getPreco() >= maisCaro) {
+                maisCaro = l.getPreco();
+                livro = l;
+            }
+        }
+        return livro;
     }
 
     public static void main(String[] args) {
@@ -73,8 +85,9 @@ public class LivrariaOnline {
 
         livrariaOnline.removerLivro("5 pontos do calvinismo");
         System.out.println(livrariaOnline.exibirLivrosOrdenadosPorPreco());
-        
+
         System.out.println(livrariaOnline.pesquisarLivrosPorAutor("Augustos Nicodemos"));
+        System.out.println("O livro mais caro é: " + livrariaOnline.obterLivroMaisCaro());
 
     }
 }
