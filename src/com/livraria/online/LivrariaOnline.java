@@ -49,12 +49,16 @@ public class LivrariaOnline {
         Map<String, Livro> livrosExibirPorPreco = new TreeMap<>(livroMap);
         return livrosExibirPorPreco;
     }
-    
-//    public Livro pesquisarLivrosPorAutor(String autor){
-//    
-//    }
-    
-    
+
+    public Map<String, Livro> pesquisarLivrosPorAutor(String autor) {
+        Map<String, Livro> livrosPorAutor = new HashMap<>();
+        for(Livro l: livroMap.values()){
+            if(l.getAutor().equalsIgnoreCase(autor)){
+                livrosPorAutor.put(autor, l);
+            }
+        }
+        return livrosPorAutor;
+    }
 
     public static void main(String[] args) {
         LivrariaOnline livrariaOnline = new LivrariaOnline();
