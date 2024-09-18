@@ -49,6 +49,12 @@ public class LivrariaOnline {
         Map<String, Livro> livrosExibirPorPreco = new TreeMap<>(livroMap);
         return livrosExibirPorPreco;
     }
+    
+//    public Livro pesquisarLivrosPorAutor(String autor){
+//    
+//    }
+    
+    
 
     public static void main(String[] args) {
         LivrariaOnline livrariaOnline = new LivrariaOnline();
