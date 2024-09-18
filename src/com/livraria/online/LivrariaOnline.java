@@ -5,7 +5,9 @@
  */
 package com.livraria.online;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -50,11 +52,11 @@ public class LivrariaOnline {
         return livrosExibirPorPreco;
     }
 
-    public Map<String, Livro> pesquisarLivrosPorAutor(String autor) {
-        Map<String, Livro> livrosPorAutor = new HashMap<>();
+    public List<Livro> pesquisarLivrosPorAutor(String autor) {
+        List<Livro> livrosPorAutor = new ArrayList<>();
         for(Livro l: livroMap.values()){
             if(l.getAutor().equalsIgnoreCase(autor)){
-                livrosPorAutor.put(autor, l);
+                livrosPorAutor.add(l);
             }
         }
         return livrosPorAutor;
@@ -65,10 +67,14 @@ public class LivrariaOnline {
 
         livrariaOnline.adicionarLivro("www.amazon.com/5", "5 pontos do calvinismo", "Charles Spurgeon", 30.50);
         livrariaOnline.adicionarLivro("www.amazon.com/sousalvo", "Sou salvo?", "Augustos Nicodemos", 50.50);
+        livrariaOnline.adicionarLivro("www.amazon.com/Cristianismodescomplicado", "Cristianismo descomplicado", "Augustos Nicodemos", 70.50);
+        livrariaOnline.adicionarLivro("www.amazon.com/OpoderdeDeusparaasantificacao", "O poder de Deus para a santificação", "Augustos Nicodemos", 70.50);
         livrariaOnline.adicionarLivro("www.amazon.com/vocequerumamigo?", "Você quer um Amigo", " J.C. Ryle ", 1.99);
 
         livrariaOnline.removerLivro("5 pontos do calvinismo");
         System.out.println(livrariaOnline.exibirLivrosOrdenadosPorPreco());
+        
+        System.out.println(livrariaOnline.pesquisarLivrosPorAutor("Augustos Nicodemos"));
 
     }
 }
