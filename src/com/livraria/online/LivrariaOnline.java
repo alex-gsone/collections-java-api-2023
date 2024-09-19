@@ -101,7 +101,6 @@ public class LivrariaOnline {
         System.out.println(livrariaOnline.pesquisarLivrosPorAutor("Augustos Nicodemos"));
         System.out.println("O livro mais caro é: " + livrariaOnline.obterLivroMaisCaro());
         System.out.println("O livro mais barato é: " + livrariaOnline.exibirLivroMaisBarato());
-        
 
     }
 }
