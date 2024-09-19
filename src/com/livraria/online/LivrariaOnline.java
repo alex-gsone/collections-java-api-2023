@@ -74,6 +74,18 @@ public class LivrariaOnline {
         return livro;
     }
 
+    public Livro exibirLivroMaisBarato() {
+        double maisBarato = 0;
+        Livro livro = null;
+        for (Livro l : livroMap.values()) {
+            if (l.getPreco() <= maisBarato) {
+                maisBarato = l.getPreco();
+                livro = l;
+            }
+        }
+        return livro;
+    }
+
     public static void main(String[] args) {
         LivrariaOnline livrariaOnline = new LivrariaOnline();
 
