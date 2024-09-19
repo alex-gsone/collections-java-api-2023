@@ -75,7 +75,7 @@ public class LivrariaOnline {
     }
 
     public Livro exibirLivroMaisBarato() {
-        double maisBarato = 0;
+        double maisBarato = 10000;
         Livro livro = null;
         for (Livro l : livroMap.values()) {
             if (l.getPreco() <= maisBarato) {
@@ -100,6 +100,8 @@ public class LivrariaOnline {
 
         System.out.println(livrariaOnline.pesquisarLivrosPorAutor("Augustos Nicodemos"));
         System.out.println("O livro mais caro é: " + livrariaOnline.obterLivroMaisCaro());
+        System.out.println("O livro mais barato é: " + livrariaOnline.exibirLivroMaisBarato());
+        
 
     }
 }
